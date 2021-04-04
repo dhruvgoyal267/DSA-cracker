@@ -1,3 +1,7 @@
+ int median(int[] arr, int s, int e) {
+        return (arr[(s + e) / 2] + arr[(s + e + 1) / 2]) / 2;
+    }
+
 int find_median(int a[], int b[], int Sa, int Sb, int Ea, int Eb) {
         if (Ea - Sa <= 1)
             return (max(a[Sa], b[Sb]) + min(a[Ea], b[Eb])) / 2;
